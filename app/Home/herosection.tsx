@@ -21,7 +21,7 @@ export default function HeroSection(){
 
 
 
-    return(<div className="relative w-full h-auto pt-40 flex flex-col justify-center -z-1 before:absolute before:inset-0 before:bg-black/98">
+    return(<div className="relative w-full pb-10 h-auto pt-40 flex flex-col justify-center -z-1 before:absolute before:inset-0 before:bg-black/98">
 
         {/* Heading Text */}
         <div className="relative mt-1 w-full h-auto flex justify-center">
@@ -62,10 +62,10 @@ export default function HeroSection(){
 
         {/* Down Text Paras */}
         <div className="relative w-full h-80 mt-28  flex justify-center items-center">
-            <div className="relative w-[90%] max-w-380 h-full flex flex-row">
-                <div className={`relative w-[75%] h-full px-[10%] text-3xl font-medium ${vendsans.className} text-white/85`}>
+            <div className="relative w-[90%] max-w-380 h-full flex flex-col sm:flex-row items-start">
+                <div className={`relative w-full sm:w-[75%] h-full sm:px-[10%] text-3xl font-medium ${vendsans.className} text-white/85`}>
                 I build designs that <span className="text-blue-700/85">solve problems</span>, inspire actions, and drive success</div>
-                <div className="relative w-[35%] h-full">
+                <div className="relative w-[50%] sm:w-[35%] h-full">
                 <div className="text-[18px] text-white/85">I build designs that solve problems, inspire actions, and drive success</div>
                 <button className="rounded-full mt-3 px-6 py-2 text-[12px] lg:text-[14px] radialgradient text-black">Contact Me ⟶</button></div>
             </div>

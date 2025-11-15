@@ -19,14 +19,14 @@ export default function Header(){
             <div className="relative w-8 h-8 mask-[url('/sparkler.png')] mask-cover bg-yellow-50" />
             <div className="absolute rotate-45 w-8 h-8 mask-[url('/sparkler.png')] mask-cover bg-white" />
         </div>
-        <ul className={`relative w-[60%] text-[14px] h-full list-disc marker:text-blue-500/80 ${poppins.className} flex flex-row items-center justify-between`}>
+        <ul className={`relative w-[60%] text-[11px] sm:text-[14px] h-full list-disc marker:text-blue-500/80 ${poppins.className} flex flex-row items-center justify-between`}>
             <li className="list-none w-fit h-full hover:list-disc text-white/80 cursor-default">Home</li>
             <li className="list-none w-fit h-full hover:list-disc text-white/80 cursor-default">About us</li>
             <li className="list-none w-fit h-full hover:list-disc text-white/80 cursor-default">Services</li>
             <li className="list-none w-fit h-full hover:list-disc text-white/80 cursor-default">My Work</li>
             <li className="list-none w-fit h-full hover:list-disc text-white/80 cursor-default">Testimonial</li>
         </ul>
-        <div className="relative w-[20%] max-w-40 h-10 rounded-full flex justify-center items-center radialgradient"><h1 className={`text-black font-sans text-[16px]`}>Contact Me</h1></div>
+        <div className="relative w-[20%] max-w-40 h-8 sm:h-10 rounded-full flex justify-center items-center radialgradient group"><h1 className={`text-black font-sans text-[12px] sm:text-[16px] group-hover:text-white/90`}>Contact Me</h1></div>
         </div>
     </div>)
 }
