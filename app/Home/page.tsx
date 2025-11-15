@@ -1,7 +1,7 @@
 import Header from "./header";
 import HeroSection from "./herosection";
 import SelectedWork from "./selectedwork";
-import OurServices from "./ourservices";
+import ClientReviews from "./clientreviews";
 
 
 
@@ -13,6 +13,6 @@ export default function Page(){
         <Header />
         <HeroSection />
         <SelectedWork />
-        <OurServices />
+        <ClientReviews />
     </div>)
 }

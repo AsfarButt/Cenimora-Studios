@@ -1,3 +1,52 @@
 .radialgradient{
     background: radial-gradient(circle at bottom, rgba(77, 98, 255, 0.85), rgba(16, 16, 255, 0.85));
 }
+
+@keyframes user1animation{
+    to{transform: translate(220px,80px);}
+}
+.user2{
+    transform: translate(-320px, 140px);
+}
+.user3{
+    transform: translate(-250px, -90px);
+}
+.user4{
+    transform: translate(-180px, 160px);
+}
+.user5{
+    transform: translate(-110px, -170px);
+}
+.user6{
+    transform: translate(-40px, 120px);
+}
+.user7{
+    transform: translate(30px, -130px);
+}
+.user8{
+    transform: translate(90px, 180px);
+}
+.user9{
+    transform: translate(160px, -200px);
+}
+.user10{
+    transform: translate(220px, 80px);
+}
+.user11{
+    transform: translate(280px, -100px);
+}
+.user12{
+    transform: translate(340px, 150px);
+}
+.user13{
+    transform: translate(-370px, 50px);
+}
+.user14{
+    transform: translate(-200px, 20px);
+}
+.user15{
+    transform: translate(100px, -50px);
+}
+
+
+
