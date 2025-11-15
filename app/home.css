@@ -1,52 +1,48 @@
-.radialgradient{
+.radialgradient {
     background: radial-gradient(circle at bottom, rgba(77, 98, 255, 0.85), rgba(16, 16, 255, 0.85));
 }
 
-@keyframes user1animation{
-    to{transform: translate(220px,80px);}
-}
-.user2{
-    transform: translate(-320px, 140px);
-}
-.user3{
-    transform: translate(-250px, -90px);
-}
-.user4{
-    transform: translate(-180px, 160px);
-}
-.user5{
-    transform: translate(-110px, -170px);
-}
-.user6{
-    transform: translate(-40px, 120px);
-}
-.user7{
-    transform: translate(30px, -130px);
-}
-.user8{
-    transform: translate(90px, 180px);
-}
-.user9{
-    transform: translate(160px, -200px);
-}
-.user10{
-    transform: translate(220px, 80px);
-}
-.user11{
-    transform: translate(280px, -100px);
-}
-.user12{
-    transform: translate(340px, 150px);
-}
-.user13{
-    transform: translate(-370px, 50px);
-}
-.user14{
-    transform: translate(-200px, 20px);
-}
-.user15{
-    transform: translate(100px, -50px);
+/* Floating animation */
+@keyframes userfloatanimation {
+    0%, 100% { transform: translateY(0px); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(0px); }
+    75% { transform: translateY(5px); }
 }
 
+/* All users common style */
+.user1, .user2, .user3, .user4, .user5,
+.user6, .user7, .user8, .user9, .user10,
+.user11, .user12, .user13, .user14, .user15 {
+    animation-name: userfloatanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* Position users via top/left */
+.user1  { top: calc(50% - 24px - 50px); left: calc(50% - 24px + 100px); animation-delay: 0.15s; }
+.user2  { top: calc(50% - 24px + 140px); left: calc(50% - 24px - 320px); animation-delay: 1.1s; }
+.user3  { top: calc(50% - 24px - 90px); left: calc(50% - 24px - 250px); animation-delay: 0.7s; }
+.user4  { top: calc(50% - 24px + 160px); left: calc(50% - 24px - 180px); animation-delay: 1.5s; }
+.user5  { top: calc(50% - 24px - 170px); left: calc(50% - 24px - 110px); animation-delay: 0.3s; }
+.user6  { top: calc(50% - 24px + 120px); left: calc(50% - 24px - 40px); animation-delay: 2s; }
+.user7  { top: calc(50% - 24px - 130px); left: calc(50% - 24px + 30px); animation-delay: 0.9s; }
+.user8  { top: calc(50% - 24px + 180px); left: calc(50% - 24px + 90px); animation-delay: 1.8s; }
+.user9  { top: calc(50% - 24px - 200px); left: calc(50% - 24px + 160px); animation-delay: 0.5s; }
+.user10 { top: calc(50% - 24px + 80px); left: calc(50% - 24px + 180px); animation-delay: 2.3s; }
+.user11 { top: calc(50% - 24px - 100px); left: calc(50% - 24px + 280px); animation-delay: 1.2s; }
+.user12 { top: calc(50% - 24px + 150px); left: calc(50% - 24px + 340px); animation-delay: 0.6s; }
+.user13 { top: calc(50% - 24px + 50px); left: calc(50% - 24px - 370px); animation-delay: 2.5s; }
+.user14 { top: calc(50% - 24px + 20px); left: calc(50% - 24px + 200px); animation-delay: 1.9s; }
+.user15 { top: calc(50% - 24px + 0px); left: calc(50% - 24px + 0px); animation-delay: 0.8s; }
 
 
+.userscontainer:hover > * {
+    filter: blur(1px);
+}
+
+.userscontainer:hover > *:hover {
+    filter: blur(0);
+    z-index: 1;
+}

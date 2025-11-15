@@ -14,7 +14,8 @@ export default function SelectedWork(){
             <p className="text-white/65 mt-4 text-center text-[12px] px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro assumenda dicta, nihil magnam eaque cumque vitae eius tempora sunt maxime minima eos aut rerum eligendi ipsam e adipisci autem, necessitatibus nemo explicabo, quos eaque voluptatibus, minima odit cum corrupti quasi rerum repellat quis optio eligendi.</p>
         </div>
 
-        <div className="relative mt-12 w-full max-w-330 h-full flex flex-col xl:flex-row items-center justify-center">
+        {/* set its width so it does not cut edges */}
+        <div className="relative mt-12 w-full max-w-330 h-full flex flex-col xl:flex-row items-center justify-center"> 
 
                 <div className="relative w-auto h-auto flex items-center justify-center flex-col md:flex-row">
                     <div className="relative w-100 h-75 md:w-75 md:h-80 transition-all duration-400 m-4 md:mx-6 lg:mx-8 rounded-2xl bg-[url('/bgimage1.jpg')] bg-center bg-cover shadow-lg shadow-blue-200/40 before:absolute before:inset-0 before:bg-black/30 before:z-1 overflow-hidden group">

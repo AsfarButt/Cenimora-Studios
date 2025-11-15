@@ -2,7 +2,7 @@ import Header from "./header";
 import HeroSection from "./herosection";
 import SelectedWork from "./selectedwork";
 import ClientReviews from "./clientreviews";
-
+import Testimonials from "./testimonials";
 
 
 
@@ -14,5 +14,6 @@ export default function Page(){
         <HeroSection />
         <SelectedWork />
         <ClientReviews />
+        <Testimonials />
     </div>)
 }
