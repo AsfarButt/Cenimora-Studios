@@ -91,15 +91,15 @@ export default function Testimonials(){
     return(<div className="relative pt-20 w-full h-auto min-h-100 bg-black/98 flex flex-col justify-center">
                 <h1 className="text-white/90 text-4xl lg:text-5xl text-center">What people say <span className={`${cormorant.className} text-[46px] lg:text-[58px] text-blue-700/90`}>about us</span></h1>
 
-                <div className="relative mx-auto my-20 max-w-290 w-[90%] h-160 flex justify-center items-center bg-white">
+                <div className="relative mx-auto my-20 max-w-290 w-[90%] h-160 flex justify-center items-center">
                     <div className={`relative w-75 h-[70%] flex flex-row items-center`}>
                         {Testimonials.map((element,index) => (
-                            <div className={`absolute flex-none h-full w-75 mr-6 transition-all duration-800 bg-white/85 shadow-sm shadow-black/40 text-8xl font-bold text-center ${activeproperties[index]}`} key={index}>{index}</div>
+                            <div className={`absolute flex-none h-full w-75 mr-6 transition-all duration-800 bg-[radial-gradient(circle_at_center,rgba(0,64,175,1),rgba(60,120,138,1))] shadow-sm shadow-black/40 text-8xl font-bold text-center ${activeproperties[index]}`} key={index}>{index}</div>
                         ))}
                     </div>
                     <div className="absolute px-2 w-full h-14 flex justify-between items-center z-1 transition-all duration-600">
-                        <button className="relative w-12 h-12 pr-3 text-black/90 text-2xl font-medium rounded-full bg-black/10" onClick={MoveLeft}>〈</button>
-                        <button className="relative w-12 h-12 pl-3 text-black/90 text-2xl font-medium rounded-full bg-black/10" onClick={MoveRight}>〉</button>
+                        <button className="relative w-12 h-12 pr-3 text-white/90 text-2xl font-medium rounded-full bg-black/10 mix-blend-difference" onClick={MoveLeft}>〈</button>
+                        <button className="relative w-12 h-12 pl-3 text-white/90 text-2xl font-medium rounded-full bg-black/10 mix-blend-difference" onClick={MoveRight}>〉</button>
                     </div>
                 </div>
     </div>)
