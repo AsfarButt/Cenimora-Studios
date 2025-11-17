@@ -4,6 +4,9 @@ import SelectedWork from "./selectedwork";
 import ClientReviews from "./clientreviews";
 import Testimonials from "./testimonials";
 import Ratings from "./ratings";
+import ManagementStrategy from "./managementstrategy";
+
+
 
 
 export default function Page(){
@@ -17,6 +20,7 @@ export default function Page(){
         <ClientReviews />
         <Testimonials />
         <Ratings />
+        <ManagementStrategy />
 
     </div>)
 }

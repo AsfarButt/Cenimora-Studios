@@ -159,7 +159,7 @@ export default function ClientReviews(){
                 </div>
             </div>
 
-            <div className="absolute top-0 left-0 transition-all duration-1000 ease-out w-12 h-12 md:w-14 md:h-14 rounded-full bg-[url('/users/user5.PNG')] bg-cover bg-center group shadow-md shadow-white/20">
+            <div className="absolute hidden md:block top-0 left-0 transition-all duration-1000 ease-out w-12 h-12 md:w-14 md:h-14 rounded-full bg-[url('/users/user5.PNG')] bg-cover bg-center group shadow-md shadow-white/20">
                 <div className="absolute bottom-full left-6 w-62 h-auto rounded-lg border border-white/30 backdrop-blur-[2px] bg-white/10 hidden group-hover:block">
                 <h1 className="text-[12px] font-bold text-white p-2">Mark Zuckerberg</h1>
                 <p className="text-[10px] leading-2.5 px-2 pb-1 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, cupiditate aperiam voluptatum laudantium iste veritatis ipsa natus</p>
