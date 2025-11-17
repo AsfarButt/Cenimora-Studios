@@ -38,11 +38,11 @@
 .user15 { top: calc(50% - 24px + 0px); left: calc(50% - 24px + 0px); animation-delay: 0.8s; }
 
 
-.userscontainer:hover > * {
+.userscontainer:hover > *:not(:hover) {
     filter: blur(1px);
+    z-index: 3;
 }
-
 .userscontainer:hover > *:hover {
     filter: blur(0);
-    z-index: 3;
+    z-index: 5;
 }
