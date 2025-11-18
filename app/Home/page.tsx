@@ -5,6 +5,7 @@ import ClientReviews from "./clientreviews";
 import Testimonials from "./testimonials";
 import Ratings from "./ratings";
 import ManagementStrategy from "./managementstrategy";
+import ContactUs from "./contactus";
 
 
 
@@ -21,6 +22,7 @@ export default function Page(){
         <Testimonials />
         <Ratings />
         <ManagementStrategy />
+        <ContactUs />
 
     </div>)
 }

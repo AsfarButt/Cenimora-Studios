@@ -77,13 +77,13 @@ export default function Testimonials(){
 
     function ChangePlacement(actives3: number, actives2: number, actives1: number, active: number, activep1: number, activep2: number, activep3: number){
         const array1 = Array(length).fill("z-0 scale-0 translate-x-120 blur-[2px]");
-        array1[actives3] = "z-0 scale-0 -translate-x-120 blur-[3px]";
-        array1[actives2] = "z-1 scale-60 -translate-x-100 blur-[3px]";
+        array1[actives3] = "z-0 scale-0 -translate-x-120 blur-[6px]";
+        array1[actives2] = "z-1 scale-60 -translate-x-100 blur-[5px]";
         array1[actives1] = "z-2 scale-80 -translate-x-70 blur-[3px]";
         array1[active] = "z-3 scale-100 translate-x-0";
         array1[activep1] = "z-2 scale-80 translate-x-70 blur-[3px]";
-        array1[activep2] = "z-1 scale-60 translate-x-100 blur-[3px]";
-        array1[activep3] = "z-0 scale-0 translate-x-120 blur-[3px]";
+        array1[activep2] = "z-1 scale-60 translate-x-100 blur-[5px]";
+        array1[activep3] = "z-0 scale-0 translate-x-120 blur-[6px]";
 
         setactiveproperties(array1);
         isDisabled.current = true;

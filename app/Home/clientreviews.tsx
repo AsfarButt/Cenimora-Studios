@@ -56,8 +56,8 @@ export default function ClientReviews(){
     },[])
 
     function ApplyZIndex(e:HTMLDivElement){
-        e.style.zIndex = "4";
-        setTimeout(() => {e.style.zIndex = "3"},800)
+        e.style.zIndex = "3";
+        setTimeout(() => {e.style.zIndex = "1"},400)
     }
 
     useEffect(() => {console.log("Visible Index:",visibleIndex); if(visibleIndex != -1) setTimeout(() => {setvisibleIndex(-1)},800)},[visibleIndex])
