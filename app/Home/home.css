@@ -46,3 +46,7 @@
     filter: blur(0);
     z-index: 4;
 }
+
+.parent:hover ~ .sibling .alphabet{
+    transform: translateY(-20px) scale(0.85);
+}
