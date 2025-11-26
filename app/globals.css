@@ -20,7 +20,7 @@
 }
 
 body {
-  background: var(--background);
+  background: black;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -36,3 +36,22 @@ body::-webkit-scrollbar-track{
   width: 3px;
   background: black;
 }
+.styledscrollargiver::-webkit-scrollbar{
+ width: 2px;
+}
+.styledscrollargiver::-webkit-scrollbar-thumb{
+  background: rgb(185, 185, 185);
+}
+.styledscrollargiver::-webkit-scrollbar-track{
+  background: transparent
+}
+
+.onstartanimation{
+  animation: onstartanimation 2s linear;
+}
+@keyframes onstartanimation{
+  from{transform: scale(100%)}
+  50%{transform: scale(120%)}
+  to{transform: scale(100%)}
+}
+

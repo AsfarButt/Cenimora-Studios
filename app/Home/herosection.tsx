@@ -18,7 +18,23 @@ const poppins = Poppins({
 })
 
 export default function HeroSection(){
+    const heroimagecontainer = useRef<HTMLDivElement | null>(null);
+    const heroimageitem1 = useRef<HTMLDivElement | null>(null);
+    const heroimageitem2 = useRef<HTMLDivElement | null>(null);
+    const heroimageitem3 = useRef<HTMLDivElement | null>(null);
+    const heroimageitem4 = useRef<HTMLDivElement | null>(null);
 
+    useEffect(() => {
+        setTimeout(() => {
+            heroimagecontainer.current?.classList.remove("opacity-0","translate-y-100");
+            setTimeout(() => {
+                heroimageitem1.current?.classList.replace("opacity-0","-rotate-3");
+                heroimageitem2.current?.classList.replace("opacity-0","opacity-100");
+                heroimageitem3.current?.classList.add("rotate-5");
+                heroimageitem4.current?.classList.remove("opacity-0");
+            },450)
+        },500)
+    },[])
 
 
     return(<div className="relative w-full pb-10 h-auto pt-40 flex flex-col justify-center -z-1 before:absolute before:inset-0 before:bg-black/98">
@@ -40,11 +56,11 @@ export default function HeroSection(){
 
         {/* Center Image */}
         <div className="relative w-full mt-22 h-auto min-h-80  flex justify-center items-center">
-            <div className="relative w-auto h-auto">
-                <div className="absolute  origin-bottom-right -rotate-3 w-52 h-62 rounded-2xl bg-white/8 z-1" />
-                <div className="absolute origin-bottom-right  rotate-1 w-52 h-62 rounded-2xl bg-white/60 z-2" />
-                <div className="relative  origin-bottom-right rotate-5 w-52 h-62 rounded-2xl bg-blue-950 z-3" />
-                <div className="absolute bottom-4 -right-16 w-25 h-25 z-5 flex justify-center items-center ">
+            <div className="relative w-auto h-auto translate-y-100 opacity-0 transition-all duration-600 ease-out" ref={heroimagecontainer}>
+                <div className="absolute origin-bottom-right w-52 h-62 opacity-0 rounded-2xl transition-all duration-600 ease-out bg-white/8 z-1" ref={heroimageitem1}/>
+                <div className="absolute origin-bottom-right w-52 h-62 opacity-0 rounded-2xl transition-all duration-600 ease-out bg-white/60 z-2"  ref={heroimageitem2}/>
+                <div className="relative origin-bottom-right w-52 h-62 rounded-2xl transition-all duration-600 ease-out bg-blue-950 z-3"  ref={heroimageitem3}/>
+                <div className="absolute bottom-4 -right-16 w-25 h-25 z-5 flex opacity-0 justify-center transition-all duration-2600 ease-out delay-600 items-center" ref={heroimageitem4}>
                     <div className="absolute pt-1 w-10 h-10 rounded-full bg-white/80 text-black text-xl flex justify-center items-center">🡣</div>
                     <svg className="relative w-full h-full">
                     <defs>

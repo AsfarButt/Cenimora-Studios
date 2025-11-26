@@ -91,7 +91,7 @@ export default function Testimonials(){
 
     }
 
-    return(<div className="relative pt-20 w-full h-auto min-h-100 bg-black/98 flex flex-col justify-center">
+    return(<div className="relative pt-20 w-full h-auto min-h-100 bg-black/98 flex flex-col justify-center overflow-hidden">
                 <h1 className="text-white/90 text-4xl lg:text-5xl text-center">What people say <span className={`${cormorant.className} text-[46px] lg:text-[58px] text-blue-700/90`}>about us</span></h1>
 
                 <div className="relative scale-80 sm:scale-90 md:scale-100 mx-auto my-20 max-w-290 w-[98%] h-160 flex justify-center items-center">
