@@ -11,6 +11,27 @@ const cormorant = Cormorant_Garamond({
 
 export default function ContactUs(){
 
+    async function SendMail(name: string, email: string, description: string) {
+        try {
+            const response = await fetch("/api/sendmail", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, email, description }),
+            });
+
+            const data = await response.json();
+            console.log(data);
+
+            if (data.success) {
+            alert("Email sent successfully!");
+            } else {
+            alert("Failed to send email: " + data.message);
+            }
+        } catch (err) {
+            console.error("Client-side error:", err);
+            alert("An error occurred while sending the email.");
+        }
+    }
 
     function SubmitFunction(e: React.FormEvent<HTMLFormElement>){
         e.preventDefault();
@@ -21,6 +42,9 @@ export default function ContactUs(){
         console.log('Name: ',name);
         console.log('Email: ',email);
         console.log('Description: ',description);
+
+        if(!description) return ;
+        SendMail(name, email, description);
     }
 
     return(<div className="relative w-full py-30 h-auto flex flex-col items-center bg-black">
@@ -41,7 +65,7 @@ export default function ContactUs(){
                         <textarea className="styledscrollargiver h-auto min-h-35 w-full py-2 px-3 rounded-lg border border-white/40 text-white/90 focus:outline-none focus:border-white/70 text-[16px]" name="description"/>
                         <label className="absolute left-2 md:left-4 bg-black/90 px-1 -top-3 scale-80 origin-left pointer-events-none text-white/60">Description</label>  
                     </div>
-                <input type="submit" className="relative rounded-full bg-white/90 px-4 font-sans font-bold hover:bg-transparent hover:text-white border border-white/40" value="Send"/>
+                <input type="submit" className="relative rounded-full bg-white/90 px-4 font-sans font-bold hover:bg-transparent text-black hover:text-white border border-white/40" value="Send"/>
                 </div>
             </form>
         </div>

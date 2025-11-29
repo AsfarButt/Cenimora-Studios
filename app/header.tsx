@@ -26,7 +26,7 @@ export default function Header(){
             <li className="list-none w-fit h-full hover:list-disc text-white/80 cursor-default"><a className="" href="/OurWork">Our Work</a></li>
             {/* <li className="list-none w-fit h-full hover:list-disc text-white/80 cursor-default">Testimonial</li> */}
         </ul>
-        <div className="relative w-[20%] max-w-40 h-9 sm:h-10 rounded-full flex justify-center items-center radialgradient group"><h1 className={`text-black font-sans text-[12px] sm:text-[16px] group-hover:text-white/90`}>Contact Us</h1></div>
+        <a className="relative w-[20%] max-w-40 h-9 sm:h-10 rounded-full flex justify-center items-center radialgradient group" href="/ContactUs"><h1 className={`text-black font-sans text-[12px] sm:text-[16px] group-hover:text-white/90`}>Contact Us</h1></a>
         </div>
     </div>)
 }
