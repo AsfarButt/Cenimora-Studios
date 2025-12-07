@@ -37,15 +37,15 @@ export default function ContactUs(){
     function SubmitFunction(e: React.FormEvent<HTMLFormElement>){
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
-        const name = formData.get("name");
-        const email = formData.get("email");
-        const description = formData.get("description");
+        const name = formData.get("name").toString();
+        const email = formData.get("email").toString();
+        const description = formData.get("description").toString();
         console.log('Name: ',name);
         console.log('Email: ',email);
         console.log('Description: ',description);
 
         if(!description) return ;
-        SendMail(name, email, description);
+       // SendMail(name, email, description);
     }
 
     return(<div className="relative w-full py-30 h-auto flex flex-col items-center bg-black">
