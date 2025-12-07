@@ -37,9 +37,9 @@ export default function ContactUs(){
     function SubmitFunction(e: React.FormEvent<HTMLFormElement>){
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
-        const name = formData.get("name").toString();
-        const email = formData.get("email").toString();
-        const description = formData.get("description").toString();
+        const name = formData.get("name")?.toString();
+        const email = formData.get("email")?.toString();
+        const description = formData.get("description")?.toString();
         console.log('Name: ',name);
         console.log('Email: ',email);
         console.log('Description: ',description);
