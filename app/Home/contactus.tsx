@@ -12,25 +12,26 @@ const cormorant = Cormorant_Garamond({
 export default function ContactUs(){
 
     async function SendMail(name: string, email: string, description: string) {
-        try {
-            const response = await fetch("/api/sendmail", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name, email, description }),
-            });
+        // try {
+        //     const response = await fetch("/api/sendmail", {
+        //     method: "POST",
+        //     headers: { "Content-Type": "application/json" },
+        //     body: JSON.stringify({ name, email, description }),
+        //     });
 
-            const data = await response.json();
-            console.log(data);
+        //     const data = await response.json();
+        //     console.log(data);
 
-            if (data.success) {
-            alert("Email sent successfully!");
-            } else {
-            alert("Failed to send email: " + data.message);
-            }
-        } catch (err) {
-            console.error("Client-side error:", err);
-            alert("An error occurred while sending the email.");
-        }
+        //     if (data.success) {
+        //     alert("Email sent successfully!");
+        //     } else {
+        //     alert("Failed to send email: " + data.message);
+        //     }
+        // } catch (err) {
+        //     console.error("Client-side error:", err);
+        //     alert("An error occurred while sending the email.");
+        // }
+        console.log("The contact us function is working");
     }
 
     function SubmitFunction(e: React.FormEvent<HTMLFormElement>){
